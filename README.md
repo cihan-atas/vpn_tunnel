@@ -21,6 +21,7 @@ Temelde VPN tünelleme, **orijinal veri paketinizi (IP başlığı, TCP/UDP baş
 
 Kapsülleme, orijinal IP paketinizin (L3+L4+Veri) şifrelendikten sonra nasıl yeni bir IP paketi içine "paketlendiğini" gösterir.
 
+``` bash
 +-----------------------------------------------------------------------+
 | AŞAMA 1: Orijinal Veri Paketi (VPN'siz) |
 | Cihazınızdan hedef sunucuya gönderilmek üzere hazırlanır. |
@@ -45,6 +46,7 @@ V
 | [Yeni Kaynak IP: PC | Yeni Hedef IP: VPN Sunucusu] | [VPN Protokol] | [ AŞAMA 2'deki Şifrelenmiş Blok ] |
 +-------------------------------------------------+----------------+-----------------------------------+
 |
+```
 +--> Orijinal L3/L4 başlıkları içeride
 ve şifrelenmiş durumda.
 
