@@ -46,14 +46,14 @@ V
 | [Yeni Kaynak IP: PC | Yeni Hedef IP: VPN Sunucusu] | [VPN Protokol] | [ AŞAMA 2'deki Şifrelenmiş Blok ] |
 +-------------------------------------------------+----------------+-----------------------------------+
 |
-```
+
 +--> Orijinal L3/L4 başlıkları içeride
 ve şifrelenmiş durumda.
 
 ---> Bu son paket (AŞAMA 3), internet üzerinden VPN sunucusuna gönderilen pakettir. <---
 Dışarıdan bakıldığında sadece PC'niz ile VPN Sunucusu arasındaki iletişim görünür.
 Orijinal hedef IP adresi (Web Sunucusu) ve orijinal L4 bilgileri dışarıdan görünmez/anlaşılmaz.
-
+```
 
 Bu şema, orijinal L3 (IP) ve L4 (TCP/UDP) başlıkları dahil tüm orijinal paketin nasıl koruyucu, şifreli bir blok haline getirildiğini ve sonra tamamen farklı (PC <-> VPN Sunucusu) adreslere sahip yeni bir IP paketiyle sarmalandığını gösterir. VPN sunucusu bu dış katmanı (Yeni IP Başlığı ve VPN Protokol Başlığı) kaldırır, içindeki şifreli bloğu çözer ve orijinal paketi (AŞAMA 1'deki haliyle) kurtararak hedefine yönlendirir.
 
